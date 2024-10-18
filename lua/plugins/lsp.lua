@@ -3,7 +3,7 @@ return {
         "williamboman/mason.nvim",
         config = function()
             require("mason").setup()
-        end
+        end,
     },
     {
         "williamboman/mason-lspconfig.nvim",
@@ -12,10 +12,10 @@ return {
                 ensure_installed = {
                     "biome",
                     "lua_ls",
-                    "ts_ls"
-                }
+                    "ts_ls",
+                },
             })
-        end
+        end,
     },
     {
         "neovim/nvim-lspconfig",
@@ -23,6 +23,7 @@ return {
             local lspconfig = require("lspconfig")
             lspconfig.lua_ls.setup({})
             lspconfig.ts_ls.setup({})
-        end
-    }
+            lspconfig.biome.setup({})
+        end,
+    },
 }
