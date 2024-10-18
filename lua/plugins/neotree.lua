@@ -10,4 +10,3 @@ return {
         { "<leader>ft", "<cmd>Neotree toggle<cr>", "Toggle NeoTree" }
     }
 }
-
